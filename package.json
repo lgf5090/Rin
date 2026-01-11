@@ -13,7 +13,6 @@
     "dev:cron": "bun wrangler dev --port 11498 --test-scheduled",
     "check": "turbo check",
     "cf-deploy": "bun scripts/migrator.ts",
-    //"b": "turbo build",
     "b": "./node_modules/.bin/turbo build",
     "t": "turbo t",
     "g": "turbo run g",
