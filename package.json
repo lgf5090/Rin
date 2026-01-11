@@ -13,7 +13,8 @@
     "dev:cron": "bun wrangler dev --port 11498 --test-scheduled",
     "check": "turbo check",
     "cf-deploy": "bun scripts/migrator.ts",
-    "b": "bunx turbo build",
+    //"b": "turbo build",
+    "b": "./node_modules/.bin/turbo build",
     "t": "turbo t",
     "g": "turbo run g",
     "m": "bun scripts/dev-migrator.ts",
@@ -23,6 +24,7 @@
     "format:write": "turbo format:write"
   },
   "devDependencies": {
+    "turbo": "^1.13.3",
     "autoprefixer": "^10.4.19",
     "i18next-parser": "^9.0.0",
     "postcss": "^8.4.38",
